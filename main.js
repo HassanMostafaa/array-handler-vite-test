@@ -5,9 +5,10 @@ import { numsArrClass } from "./components/arrayHandler";
 const eleQs = (ele) => document.querySelector(ele);
 
 // VARS
-const numbers = new numsArrClass(1, 2, 3);
+const arr = [4, 8, 9];
+const numbers = new numsArrClass(...arr);
 
 // CODE
-eleQs("#app").innerHTML = `<p>Unique Id: ${id}</p>
-      <p>Sum of arr [1,2,3]: ${numbers.reduceSum()}</p>
+eleQs("#app").innerHTML = `<p>Testing_Unique_Id: ${id}</p>
+      <p>Sum of arr ( ${arr} ): ${numbers.reduceSum()}</p>
 `;

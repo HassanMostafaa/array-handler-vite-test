@@ -1,7 +1,5 @@
 // All the ways to sum up an Array
 export class numsArrClass {
-  sum;
-  arr;
   constructor(...arr) {
     this.sum = 0;
     this.arr = arr;
@@ -10,19 +8,16 @@ export class numsArrClass {
   reduceSum() {
     this.sum = this.arr.reduce((acc, curr) => acc + curr);
     return this.sum;
-    
   }
 
   mapSum() {
     this.arr.map((x) => (this.sum += x));
     return this.sum;
-    
   }
 
   forEachSum() {
     this.arr.forEach((x) => (this.sum += x));
     return this.sum;
-    
   }
 
   forLoopSum() {
@@ -30,6 +25,5 @@ export class numsArrClass {
       this.sum += num;
     }
     return this.sum;
-    
   }
 }
